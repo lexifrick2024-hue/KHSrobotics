@@ -1,0 +1,1876 @@
+/* ===================================
+   KHS ROBOTICS TEAM
+   HOME PAGE STYLESHEET
+=================================== */
+
+/* ---------- Colors ---------- */
+
+:root{
+    --black:#111111;
+    --white:#F5F5F5;
+    --green:#00C853;
+    --pink:#FF1493;
+}
+
+
+/* ---------- General ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background-color:var(--black);
+
+    color:var(--white);
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    overflow-x:hidden;
+
+
+    background-image:
+
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(255,20,147,0.25),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(0,200,83,0.25),
+            transparent 30%
+        );
+
+
+    background-attachment:fixed;
+
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav{
+
+    width:100%;
+
+    background:rgba(17,17,17,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:2px solid var(--green);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    padding:22px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+}
+
+.nav-links a:hover{
+
+    background:rgba(255,20,147,.15);
+
+    color:var(--pink);
+
+}
+
+.menu-button{
+
+    display:none;
+
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    max-width:1150px;
+
+    margin:70px auto;
+
+    padding:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.hero-text{
+
+    max-width:600px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h2{
+
+    color:var(--green);
+
+    font-size:30px;
+
+    font-weight:normal;
+
+}
+
+.logo{
+
+    width:220px;
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ---------- Sections ---------- */
+
+section{
+
+    max-width:1100px;
+
+    margin:70px auto;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+}
+
+h3{
+
+    text-align:center;
+
+    color:var(--pink);
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+/* ---------- Team Cards ---------- */
+
+.team-cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.team-card{
+
+    width:320px;
+
+    background:#1b1b1b;
+
+    border:2px solid var(--green);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(0,200,83,.3);
+
+}
+
+.team-card h4{
+
+    color:var(--green);
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ---------- About ---------- */
+
+.about{
+
+    text-align:center;
+
+}
+
+
+/* ---------- Team Photo ---------- */
+
+.team-photo{
+
+    text-align:center;
+
+}
+
+.team-photo img{
+
+    width:100%;
+
+    max-width:750px;
+
+    border-radius:18px;
+
+    margin-top:20px;
+
+}
+
+.caption{
+
+    margin-top:15px;
+
+    font-style:italic;
+
+    color:#cccccc;
+
+}
+
+
+/* ---------- Updates ---------- */
+
+.update-cards{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.update-card{
+
+    width:300px;
+
+    background:#1b1b1b;
+
+    border:2px solid var(--pink);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+.update-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(255,20,147,.3);
+
+}
+
+.update-card h4{
+
+    margin-bottom:15px;
+
+    color:var(--pink);
+
+}
+
+
+/* ---------- Progress ---------- */
+
+.progress-cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.card{
+
+    width:300px;
+
+    background:#1b1b1b;
+
+    border:2px solid var(--green);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(0,200,83,.3);
+
+}
+
+.card h4{
+
+    color:var(--green);
+
+    margin-bottom:15px;
+
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    margin-top:80px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-top:2px solid var(--green);
+
+    background:#0c0c0c;
+
+}
+
+footer h4{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.socials{
+
+    margin:25px 0;
+
+}
+
+.socials a{
+
+    color:var(--pink);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.socials a:hover{
+
+    color:var(--green);
+
+}
+
+.copyright{
+
+    color:#999;
+
+    font-size:15px;
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.nav-links{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero h2{
+
+    font-size:24px;
+
+}
+
+.logo{
+
+    margin-top:30px;
+
+    width:170px;
+
+}
+
+section{
+
+    margin:30px 15px;
+
+    padding:25px;
+
+}
+
+.team-card,
+.update-card,
+.card{
+
+    width:100%;
+
+}
+
+.team-photo img{
+
+    width:100%;
+
+}
+
+}
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+
+.about-section {
+
+    max-width:900px;
+
+    margin:70px auto;
+
+    padding:40px;
+
+    background-color:rgba(17,17,17,0.75);
+
+    border-radius:20px;
+
+    border:2px solid rgba(0,200,83,0.5);
+
+    backdrop-filter:blur(8px);
+
+    text-align:center;
+
+}
+
+
+.about-section h1 {
+
+    color:var(--white);
+
+    font-size:48px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-section h3 {
+
+    color:var(--pink);
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-section p {
+
+    color:var(--white);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* Intro Section Highlight */
+
+.intro-about {
+
+    border:2px solid var(--pink);
+
+    box-shadow:0 0 20px rgba(255,20,147,0.15);
+
+}
+
+
+
+/* ===========================
+   ABOUT GALLERY
+=========================== */
+
+
+.gallery {
+
+    max-width:1000px;
+
+    margin:80px auto;
+
+    padding:40px;
+
+    background-color:rgba(17,17,17,0.75);
+
+    border-radius:20px;
+
+    border:2px solid var(--green);
+
+    backdrop-filter:blur(8px);
+
+    text-align:center;
+
+}
+
+
+
+.gallery h3 {
+
+    color:var(--pink);
+
+}
+
+
+
+.gallery-images {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.gallery-images img {
+
+    width:280px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:3px solid var(--green);
+
+    transition:.3s;
+
+}
+
+
+
+.gallery-images img:hover {
+
+    transform:scale(1.05);
+
+    border-color:var(--pink);
+
+}
+
+
+
+/* ===========================
+   MOBILE ABOUT PAGE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .about-section {
+
+        margin:40px 20px;
+
+        padding:25px;
+
+    }
+
+
+    .about-section h1 {
+
+        font-size:36px;
+
+    }
+
+
+    .about-section h3 {
+
+        font-size:28px;
+
+    }
+
+
+    .gallery {
+
+        margin:40px 20px;
+
+        padding:25px;
+
+    }
+
+
+    .gallery-images img {
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+}
+/* ===========================
+   LEADERSHIP PAGE
+=========================== */
+
+
+.page-header {
+
+    max-width:900px;
+
+    margin:70px auto;
+
+    padding:40px;
+
+    background-color:rgba(17,17,17,.75);
+
+    border-radius:20px;
+
+    border:2px solid var(--pink);
+
+    text-align:center;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+
+.page-header h1 {
+
+    color:var(--white);
+
+    font-size:48px;
+
+}
+
+
+
+.page-header p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+/* Section Titles */
+
+
+.leadership-section {
+
+    max-width:900px;
+
+    margin:60px auto 20px;
+
+    text-align:center;
+
+}
+
+
+
+.leadership-section h2 {
+
+    color:var(--green);
+
+    font-size:36px;
+
+}
+
+
+
+
+
+/* Leadership Cards */
+
+
+.leaders {
+
+    max-width:1200px;
+
+    margin:40px auto 80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+.leader-card {
+
+    width:280px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    border:2px solid var(--green);
+
+    transition:.3s;
+
+}
+
+
+
+.leader-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(0,200,83,.35);
+
+}
+
+
+
+.leader-card img {
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid var(--pink);
+
+}
+
+
+
+.leader-card h3 {
+
+    color:var(--white);
+
+    font-size:26px;
+
+    margin-top:20px;
+
+}
+
+
+
+.leader-card h4 {
+
+    color:var(--green);
+
+    font-size:20px;
+
+}
+
+
+
+.leader-card p {
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* Multiple Roles */
+
+.roles {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+
+
+.roles span {
+
+    background-color:rgba(255,20,147,.15);
+
+    color:var(--pink);
+
+    border:1px solid var(--pink);
+
+    padding:8px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.page-header {
+
+    margin:40px 20px;
+
+    padding:25px;
+
+}
+
+
+.page-header h1 {
+
+    font-size:36px;
+
+}
+
+
+.leadership-section h2 {
+
+    font-size:28px;
+
+}
+
+
+.leaders {
+
+    margin:30px 20px;
+
+}
+
+
+.leader-card {
+
+    width:85%;
+
+}
+
+
+}
+/* ===========================
+   SEASONS PAGE
+=========================== */
+
+
+.season-card {
+
+    max-width:1000px;
+
+    margin:70px auto;
+
+    padding:40px;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    border-left:5px solid var(--green);
+
+    text-align:center;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+
+.season-card h2 {
+
+    color:var(--pink);
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.season-card h3 {
+
+    color:var(--green);
+
+    font-size:28px;
+
+}
+
+
+
+.season-card p {
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* Season Information Boxes */
+
+
+.season-info {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.season-info div {
+
+    width:250px;
+
+    padding:25px;
+
+    background-color:rgba(28,28,28,.9);
+
+    border:2px solid var(--green);
+
+    border-radius:15px;
+
+}
+
+
+
+.season-info h4 {
+
+    color:var(--pink);
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.season-info p {
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+    .season-card {
+
+        margin:40px 20px;
+
+        padding:25px;
+
+    }
+
+
+    .season-card h2 {
+
+        font-size:32px;
+
+    }
+
+
+    .season-info div {
+
+        width:85%;
+
+    }
+
+
+}
+/* ===========================
+   OUTREACH PAGE
+=========================== */
+
+
+.outreach-cards {
+
+    max-width:1100px;
+
+    margin:70px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.outreach-card {
+
+    width:280px;
+
+    padding:30px;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    border:2px solid var(--green);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.outreach-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(255,20,147,.35);
+
+}
+
+
+
+.outreach-card h3 {
+
+    color:var(--pink);
+
+    font-size:26px;
+
+}
+
+
+
+.outreach-card p {
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+
+
+/* Outreach Gallery */
+
+.gallery {
+
+    max-width:1000px;
+
+    margin:80px auto;
+
+    padding:35px;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+
+.gallery h3 {
+
+    color:var(--green);
+
+}
+
+
+
+.gallery-images {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.gallery-images img {
+
+    width:280px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:2px solid var(--pink);
+
+    transition:.3s;
+
+}
+
+
+
+.gallery-images img:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+    .outreach-cards {
+
+        margin:40px 20px;
+
+    }
+
+
+    .outreach-card {
+
+        width:85%;
+
+    }
+
+
+    .gallery {
+
+        margin:40px 20px;
+
+        padding:25px;
+
+    }
+
+
+    .gallery-images img {
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+
+}
+/* ===========================
+   SPONSORS PAGE
+=========================== */
+
+
+.sponsors {
+
+    max-width:1100px;
+
+    margin:70px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.sponsor-card {
+
+    width:300px;
+
+    padding:30px;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    border:2px solid var(--green);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.sponsor-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(0,200,83,.35);
+
+}
+
+
+
+.sponsor-card img {
+
+    width:180px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.sponsor-card h3 {
+
+    color:var(--pink);
+
+    font-size:24px;
+
+}
+
+
+
+.sponsor-card p {
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+
+
+/* Sponsor Contact Box */
+
+
+.sponsor-contact {
+
+    max-width:800px;
+
+    margin:80px auto;
+
+    padding:40px;
+
+    text-align:center;
+
+    background-color:rgba(17,17,17,.85);
+
+    border-radius:20px;
+
+    border:2px solid var(--pink);
+
+}
+
+
+
+.sponsor-contact h3 {
+
+    color:var(--green);
+
+}
+
+
+
+.sponsor-contact p {
+
+    line-height:1.7;
+
+}
+
+
+
+
+.sponsor-btn {
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    background-color:var(--pink);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+.sponsor-btn:hover {
+
+    background-color:var(--green);
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.sponsors {
+
+    margin:40px 20px;
+
+}
+
+
+.sponsor-card {
+
+    width:85%;
+
+}
+
+
+.sponsor-contact {
+
+    margin:40px 20px;
+
+    padding:25px;
+
+}
+
+
+}
+/* ===========================
+   Donation Page
+=========================== */
+
+
+/* Donation Cards Container */
+
+.donation-cards {
+
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* Individual Donation Cards */
+
+.donation-card {
+
+    background-color: rgba(28,28,28,0.9);
+
+    border: 2px solid var(--green);
+
+    border-radius: 20px;
+
+    width: 280px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transition: .3s ease;
+
+}
+
+
+.donation-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--pink);
+
+    box-shadow: 0 0 20px rgba(255,20,147,0.35);
+
+}
+
+
+
+.donation-card h3 {
+
+    color: var(--pink);
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.donation-card p {
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ===========================
+   Donation Contact Section
+=========================== */
+
+
+.donation-button {
+
+    max-width: 850px;
+
+    margin: 80px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgba(17,17,17,.75);
+
+    border-radius: 20px;
+
+    border: 2px solid var(--green);
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+
+.donation-button h3 {
+
+    color: var(--pink);
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.donation-button p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* Donation Button */
+
+.donate-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 35px;
+
+    background-color: var(--pink);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: .3s ease;
+
+}
+
+
+
+.donate-btn:hover {
+
+    background-color: var(--green);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px rgba(0,200,83,.4);
+
+}
+
+
+
+/* ===========================
+   Mobile Donation Layout
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .donation-card {
+
+        width: 85%;
+
+    }
+
+
+    .donation-button {
+
+        width: 85%;
+
+        padding: 25px;
+
+    }
+
+
+    .donation-button h3 {
+
+        font-size: 26px;
+
+    }
+
+
+}
+/* ===========================
+   Contact Page
+=========================== */
+
+
+/* Contact Cards */
+
+.contact-card {
+
+    max-width: 850px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgba(17,17,17,.75);
+
+    border-radius: 20px;
+
+    border: 2px solid var(--green);
+
+    backdrop-filter: blur(5px);
+
+    transition: .3s ease;
+
+}
+
+
+
+.contact-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--pink);
+
+    box-shadow: 0 0 20px rgba(255,20,147,.3);
+
+}
+
+
+
+/* Contact Headings */
+
+.contact-card h3 {
+
+    color: var(--pink);
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contact-card p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* Email Highlight */
+
+.contact-card strong {
+
+    color: var(--green);
+
+    font-size: 20px;
+
+}
+
+
+
+/* Contact Button */
+
+.contact-btn {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 35px;
+
+    background-color: var(--pink);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: .3s ease;
+
+}
+
+
+
+.contact-btn:hover {
+
+    background-color: var(--green);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px rgba(0,200,83,.4);
+
+}
+
+
+
+/* ===========================
+   Mobile Contact Layout
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .contact-card {
+
+        width: 85%;
+
+        padding: 25px;
+
+    }
+
+
+    .contact-card h3 {
+
+        font-size: 26px;
+
+    }
+
+
+    .contact-card p {
+
+        font-size: 16px;
+
+    }
+
+
+}
