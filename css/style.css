@@ -1874,3 +1874,45 @@ section{
 
 
 }
+/* ===========================
+   Update Button
+=========================== */
+
+.update-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 14px 30px;
+
+    background-color: var(--pink);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s ease;
+
+    border: 2px solid var(--pink);
+
+}
+
+
+.update-btn:hover {
+
+    background-color: var(--green);
+
+    border-color: var(--green);
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 0 15px rgba(0,200,83,0.5);
+
+}
